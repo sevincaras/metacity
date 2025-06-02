@@ -2,12 +2,43 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Yönlendiriliyor...</title>
+  <title>MetaCitizens Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-top: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
   <script>
-    window.location.replace("https://sites.google.com/view/metacitizens-project/");
+    setTimeout(() => {
+      window.location.href = "https://sites.google.com/view/metacitizens-project/";
+    }, 3000);
   </script>
 </head>
 <body>
-  <p>Yönlendiriliyorsunuz... Eğer yönlendirilmezseniz <a href="https://sites.google.com/view/metacitizens-project/">buraya tıklayın</a>.</p>
+  <h1>MetaCitizens Project Açılıyor...</h1>
+  <div class="loader"></div>
+  <p>3 saniye içinde yönlendirileceksiniz.</p>
 </body>
 </html>
